@@ -1,0 +1,9 @@
+   <div class='pagination'>
+<!--   {{#if eq @this.currentPage 0}}-->
+      <button type='button' {{on 'click' @this.prevPage }}>&lsaquo;</button>
+<!--    {{/if}}-->
+     {{#each this.pages as |page|}}
+        <button type='button'{{on 'click' (fn @this.setPageItems page) }}>{{page}}</button>
+     {{/each}}
+      <button type='button' {{on 'click' @this.nextPage }}>&rsaquo;</button>
+   </div>

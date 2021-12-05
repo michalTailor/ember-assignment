@@ -1,0 +1,21 @@
+
+  <div class="cards">
+     {{#each this.cards as |card|}}
+       <Card
+         @headline={{card.headline}}
+         @subHeadline={{card.subHeadline}}
+         @imageUrl={{card.imageUrl}}
+       />
+     {{/each}}
+   </div>
+
+<div class='togglePagination'>
+   <List::Pagination
+     @items={{this.cards}}
+     @currentPage={{this.currentPage}}
+     @nextPage={{this.nextPage}}
+     @prevPage= {{this.prevPage}}
+     @numberPages={{this.numberPages}}
+     @setPageItems={{this.setPageItems}}
+    />
+</div>
