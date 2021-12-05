@@ -4,8 +4,8 @@
 
 
 html {
-  box-sizing: border-box;
-  font-size: 16px;
+  /*box-sizing: border-box;*/
+  /*font-size: 16px;*/
 }
 
 *,
@@ -31,72 +31,66 @@ li {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  padding: 1rem;
+  /*font-family: "Open Sans", sans-serif;*/
+  /*padding: 1rem;*/
 }
 
 img {
-  width: 100%;
-  height: 200px;
+  /*width: 100%;*/
+  /*height: 200px;*/
 }
 
 .container{
-
+  /*margin: 0 auto;*/
 }
 
 .cards{
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+}
+.card-width{
+  /*width: 32%;*/
 }
 
 .card-basis{
-  width: 32%;
-  padding: 1rem;
-  margin: 0.3rem;
-  border: 1px solid grey;
-  /*border-radius: 1rem;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /*width: 32%;*/
+  /*padding: 1rem;*/
+  /*margin: 0.3rem;*/
+  /*border: 1px solid grey;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
 }
 
 .card-basis > h3{
-  /*text-transform: uppercase;*/
-  font-weight: 700;
+  /*font-weight: 700;*/
 }
 
 .card-basis > p{
-  /*text-transform: lowercase;*/
-  text-decoration-line: underline;
+  /*text-decoration-line: underline;*/
 }
 
 .pagination{
-  display: flex;
-  justify-content: center;
+  /*display: flex;*/
+  /*justify-content: center;*/
 }
 
 .page{
-  border: 1px solid grey;
-  padding: 0.3rem 0.7rem;
-  margin: 0.5rem;
-  border-radius: 0.4rem;
+  /*border: 1px solid grey;*/
+  /*padding: 0.3rem 0.7rem;*/
+  /*margin: 0.5rem;*/
+  /*border-radius: 0.4rem;*/
 }
 
 
 
 @media only screen and (max-width: 600px) {
-  .togglePagination {
-    display: none;
-  }
+  /*.togglePagination {*/
+  /*  display: none;*/
+  /*}*/
 
-  img {
-    /*width: 150px;*/
-    /*height: 100px;*/
-    /*border-radius: 2rem;*/
-  }
-
-  .card-basis {
-    width: 100%;
-    margin: 0.3rem 0;
-  }
+  /*.card-basis {*/
+  /*  width: 100%;*/
+  /*  margin: 0.3rem 0;*/
+  /*}*/
 }

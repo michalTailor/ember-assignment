@@ -1,5 +1,5 @@
 
-  <div class="cards">
+  <div class="flex flex-wrap">
      {{#each this.cards as |card|}}
        <Card
          @headline={{card.headline}}
@@ -9,7 +9,7 @@
      {{/each}}
    </div>
 
-<div class='togglePagination'>
+<div class='hidden md:block lg:block'>
    <List::Pagination
      @items={{this.cards}}
      @currentPage={{this.currentPage}}

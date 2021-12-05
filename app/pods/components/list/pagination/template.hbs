@@ -1,9 +1,10 @@
-   <div class='pagination'>
+   <div class='flex justify-center'>
 <!--   {{#if eq @this.currentPage 0}}-->
-      <button type='button' {{on 'click' @this.prevPage }}>&lsaquo;</button>
+<!--      <button type='button' {{on 'click' @this.prevPage }}>&lsaquo;</button>-->
 <!--    {{/if}}-->
+     <button type='button' {{on 'click' @this.prevPage }}>&lsaquo;</button>
      {{#each this.pages as |page|}}
-        <button type='button'{{on 'click' (fn @this.setPageItems page) }}>{{page}}</button>
+        <button type='button'{{on 'click' (fn @this.setPageItems page) }} class="border border-solid border-gray-400 m-2 rounded py-0.5 px-1.5">{{page}}</button>
      {{/each}}
       <button type='button' {{on 'click' @this.nextPage }}>&rsaquo;</button>
    </div>
