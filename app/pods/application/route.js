@@ -19,16 +19,17 @@ export default class ApplicationRoute extends Route {
     let obj = {};
 
     data.forEach((element) => {
+      // console.log(element);
       obj = {
-        headline: element.fields.Headline,
+        headline: element.headline,
         subHeadline:
-          typeof element.fields['Sub-headline'] === 'undefined'
+           !element.sub_headline
             ? 'No sub-headline'
-            : element.fields['Sub-headline'],
+            : element.sub_headline,
         imageUrl:
-          typeof element.fields.HeaderImage === 'undefined'
+           !element.header_image
             ? 'https://st3.depositphotos.com/23594922/31822/v/600/depositphotos_318221368-stock-illustration-missing-picture-page-for-website.jpg'
-            : element.fields.HeaderImage,
+            : element.header_image,
       };
       res.push(obj);
 
